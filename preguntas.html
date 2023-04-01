@@ -1,0 +1,78 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <!--css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--  CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="accordion">
+    <div class="image-box">
+      <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+    </div>
+    <div class="accordion-text">
+      <div class="title">Preguntas Frecuentes</div>
+    <ul class="faq-text">
+      <li>
+        <div class="question-arrow">
+          <span class="question">Se hace reservas?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Si, aunque solo si es la primera persona en pedirlo, no se reservará aunque pague más.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Hay despachos fuera de Chile?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Los envios de DecoVintage son solo dentro de Chile a traves de Starken.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Cual es el origen de los productos?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Los productos vienen de distintos paises, el origen se especifica en la publicacion.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Se hacen ofertas?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>No se harán precios especiales, solo los descuentos administrados oficialmente.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Por que medios se hacen los despachos?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Los despachos se efectuan via Starken.</p>
+        <span class="line"></span>
+      </li>
+    </ul>
+    </div>
+  </div>
+
+  <script>
+    let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
+</body>
+</html>

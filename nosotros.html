@@ -89,7 +89,99 @@
   
   <!-- nosotros termina -->
 
-  
+<main>
+  <!-- formulario empieza -->
+  <div class="row align-items-center">
+    <h2>REGISTRATE Y PARTICIPA EN NUESTRO CONSURSO DE ANIVERSARIO</h2>
+  </div>
+  <form action="#" class="formulario" id="formulario">
+      <!-- usuario -->
+      <div class="formulario__grupo" id="grupo__usuario">
+          <label class="formulario__label">USUARIO</label>
+          <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="ABC_123">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">MINIMO 4 CARACTERES, SOLO LETRAS NUMEROS Y GUION BAJO</p>
+      </div>
+
+      
+      <!-- nombre y apellido-->
+      <div class="formulario__grupo" id="grupo__nombre">
+          <label class="formulario__label">NOMBRE Y APELLIDO</label>
+          <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="NOMBRE...">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">MINIMO 4 CARACTERES, SOLO LETRAS NUMEROS Y GUION BAJO</p>
+      </div>
+
+
+      <!-- contrasena-->
+      <div class="formulario__grupo" id="grupo__contrasena">
+          <label class="formulario__label">CONTRASEÑA</label>
+          <div class="formulario__grupo-input">
+              <input type="contrasena" class="formulario__input" name="contrasena" id="contrasena">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">DEBE TENER ENTRE 4 Y 12 DIGITOS</p>
+      </div>
+
+
+      <!-- repetir contrasena-->
+      <div class="formulario__grupo" id="grupo__contrasena2">
+          <label class="formulario__label">REPETIR CONTRASEÑA</label>
+          <div class="formulario__grupo-input">
+              <input type="contrasena" class="formulario__input" name="contrasena2" id="contrasena2">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">NO COINCIDE LA CONTRASEÑA</p>
+      </div>
+
+
+      <!-- gmail -->
+      <div class="formulario__grupo" id="grupo__correo">
+          <label class="formulario__label">GMAIL</label>
+          <div class="formulario__grupo-input">
+              <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@gmail.com">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">MINIMO 4 CARACTERES, SOLO LETRAS NUMEROS, ARROBA Y GUION BAJO</p>
+      </div>
+
+
+      <!-- celular -->
+      <div class="formulario__grupo" id="grupo__celular">
+          <label class="formulario__label">CELULAR</label>
+          <div class="formulario__grupo-input">
+              <input type="celular" class="formulario__input" name="celular" id="celular" placeholder="912345678">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">DEBE TENER 9 DIGITOS</p>
+      </div>
+
+
+      <!-- terminos -->
+      <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+          <label class="formulario__label">
+              <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+              <b class="formulario__span">ACEPTO LOS TERMINOS Y CONDICIONES</b>
+          </label>
+      </div>
+      
+      <!-- campos vacios -->
+      <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-circle"> <b>Error:</b> NO PUEDEN HABER CAMPOS VACIOS</i></p>
+      </div>
+
+
+      <!-- envio -->
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">ENVIADO CORRECTAMENTE</p>
+          <input class="formulario__btn" type="submit" value="Enviar">
+      </div>
+  </form>
+</main>
 </body>
 </html>
 
@@ -102,3 +194,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <!-- JS  -->
 <script src="js/index.js"></script>
+<script src="js/formulario.js"></script>
